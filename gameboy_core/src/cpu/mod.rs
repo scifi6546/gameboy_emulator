@@ -1,3 +1,13 @@
+/*
+TODO:
+1) add opcodes for accurate timings
+2) add opcode_accurate_state member variable to CPU
+3) add getter to said variable
+4) add necessary logic in CPU::step function to use the opcode_accurate_state variabe
+5) use the getter in the emulator's step function to only fire interrupts when state == 0
+6) get the mem_timings tests to pass
+*/
+
 mod registers;
 
 use self::registers::flag::Flag;
